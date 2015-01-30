@@ -1,0 +1,3 @@
+AuthType Pubcookie
+PubcookieAppID roombooking
+PubcookieEndSession clearlogin
