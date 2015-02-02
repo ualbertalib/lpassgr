@@ -80,11 +80,13 @@ $session_id = "";
 		
 	
       //There is no session in the database matching your session id... send to login page.
-      header('Location: ' . $MACEWAN_LOGIN_PAGE);
+     	echo "Error a session ID was invalid.";
+		exit();
     }
   } else {
     //There is no session id cookie or argument... send to login page.
-    header('Location: ' . $MACEWAN_LOGIN_PAGE);
+   	echo "Error a session ID was invalid.";
+	exit();
   }
   
 ?>  
